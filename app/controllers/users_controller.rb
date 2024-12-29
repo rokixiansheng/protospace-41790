@@ -7,8 +7,9 @@ class UsersController < ApplicationController
     @profile = @user.profile
     @occupation = @user.occupation
     @position = @user.position
-    comment = Comment.find(params[:id])
+    @prototypes = @user.prototypes
   end
 
   
 end
+
